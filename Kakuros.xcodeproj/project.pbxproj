@@ -19,6 +19,7 @@
 		1003156B2611B68000816EA4 /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003156A2611B68000816EA4 /* SignupVC.swift */; };
 		1003156E2611BF7500816EA4 /* ManageGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003156D2611BF7500816EA4 /* ManageGameVC.swift */; };
 		100315712611C4EE00816EA4 /* ChoseDifficultyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */; };
+		100315742611C65300816EA4 /* MainGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100315732611C65200816EA4 /* MainGameVC.swift */; };
 		CB124EE887EAE262FABA5E2D /* Pods_Kakuros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A400450926CFC9CE988610 /* Pods_Kakuros.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		1003156A2611B68000816EA4 /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		1003156D2611BF7500816EA4 /* ManageGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGameVC.swift; sourceTree = "<group>"; };
 		100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseDifficultyVC.swift; sourceTree = "<group>"; };
+		100315732611C65200816EA4 /* MainGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameVC.swift; sourceTree = "<group>"; };
 		504ECE101488AE11D34F85D0 /* Pods-Kakuros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.release.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.release.xcconfig"; sourceTree = "<group>"; };
 		95122F1FEEDD0239514C2E23 /* Pods-Kakuros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.debug.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 				1003156A2611B68000816EA4 /* SignupVC.swift */,
 				1003156D2611BF7500816EA4 /* ManageGameVC.swift */,
 				100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */,
+				100315732611C65200816EA4 /* MainGameVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				1003156B2611B68000816EA4 /* SignupVC.swift in Sources */,
 				1003156E2611BF7500816EA4 /* ManageGameVC.swift in Sources */,
 				1003152E2611A4B000816EA4 /* Kakuros.xcdatamodeld in Sources */,
+				100315742611C65300816EA4 /* MainGameVC.swift in Sources */,
 				100315282611A4B000816EA4 /* ViewController.swift in Sources */,
 				100315242611A4B000816EA4 /* AppDelegate.swift in Sources */,
 				100315262611A4B000816EA4 /* SceneDelegate.swift in Sources */,
