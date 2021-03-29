@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uYe-6Q-J6t">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lxq-Ii-A3F">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -166,16 +165,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="カックロ" translatesAutoresizingMaskIntoConstraints="NO" id="1WL-Mq-O3S">
-                                <rect key="frame" x="633" y="175" width="100" height="100"/>
+                                <rect key="frame" x="633" y="175" width="100" height="127"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="XaP-Yu-jc0"/>
-                                    <constraint firstAttribute="height" constant="100" id="ZNf-Aj-xeY"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="WAe-Ee-qBa">
-                                <rect key="frame" x="532.5" y="345" width="301" height="340"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="WAe-Ee-qBa">
+                                <rect key="frame" x="532.5" y="372" width="301" height="280"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-wT-iPA">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcY-wT-iPA">
                                         <rect key="frame" x="0.0" y="0.0" width="301" height="60"/>
                                         <color key="backgroundColor" red="0.96078431610000004" green="0.50980395079999996" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -184,9 +182,12 @@
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="  Start Game  "/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="Lxq-Ii-A3F" eventType="touchUpInside" id="bzV-gd-Pax"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg2-jN-BhV">
-                                        <rect key="frame" x="0.0" y="140" width="301" height="60"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dg2-jN-BhV">
+                                        <rect key="frame" x="0.0" y="110" width="301" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="dMf-Ys-eNN"/>
@@ -194,16 +195,23 @@
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title=" Check Highscore "/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="Lxq-Ii-A3F" eventType="touchUpInside" id="6ZU-3i-i4N"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlV-NL-eNv">
-                                        <rect key="frame" x="0.0" y="280" width="301" height="60"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlV-NL-eNv">
+                                        <rect key="frame" x="0.0" y="220" width="301" height="60"/>
                                         <color key="backgroundColor" red="0.96078431610000004" green="0.50980395079999996" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="UdN-20-aBD"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="rMd-YD-Qpb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="How To Play"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="Lxq-Ii-A3F" eventType="touchUpInside" id="LGd-pv-Hq4"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -259,7 +267,7 @@
         <!--Main GameVC-->
         <scene sceneID="cbJ-Bc-AtS">
             <objects>
-                <viewController id="uYe-6Q-J6t" customClass="MainGameVC" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainGameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uYe-6Q-J6t" customClass="MainGameVC" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K4s-GC-LaX">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -274,7 +282,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameMap" translatesAutoresizingMaskIntoConstraints="NO" id="OvT-fz-MOU">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameMap2" translatesAutoresizingMaskIntoConstraints="NO" id="OvT-fz-MOU">
                                 <rect key="frame" x="433" y="262" width="500" height="500"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="Slq-54-vzp">
@@ -333,7 +341,7 @@
                                         </constraints>
                                         <color key="textColor" red="0.1058823466" green="0.1058823466" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="048-Ps-62R">
                                         <rect key="frame" x="322" y="0.0" width="145" height="145"/>
@@ -382,17 +390,68 @@
                                     </textField>
                                 </subviews>
                             </stackView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LSC-xY-VXH">
+                                <rect key="frame" x="0.0" y="979" width="1366" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="pfP-3z-lmf"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </progressView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="2hv-oK-yl5">
+                                <rect key="frame" x="538" y="802" width="290" height="144"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uol-eK-ER1">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4Bl-31-pnM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="参加 Submitする"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="t2D-vI-9D6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22W-5q-IQQ">
+                                        <rect key="frame" x="0.0" y="84" width="290" height="60"/>
+                                        <color key="backgroundColor" red="1" green="0.47843140360000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="acq-7G-jwf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="終わ Endりす"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="GfU-bo-75V"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="22W-5q-IQQ" firstAttribute="leading" secondItem="2hv-oK-yl5" secondAttribute="leading" id="0sD-bH-Y04"/>
+                                    <constraint firstAttribute="trailing" secondItem="22W-5q-IQQ" secondAttribute="trailing" id="4rG-i1-buI"/>
+                                    <constraint firstItem="Uol-eK-ER1" firstAttribute="top" secondItem="2hv-oK-yl5" secondAttribute="top" id="Cox-RH-ewG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uol-eK-ER1" secondAttribute="trailing" id="bDF-4C-sI2"/>
+                                    <constraint firstAttribute="bottom" secondItem="22W-5q-IQQ" secondAttribute="bottom" id="hzm-OF-JSf"/>
+                                    <constraint firstItem="Uol-eK-ER1" firstAttribute="leading" secondItem="2hv-oK-yl5" secondAttribute="leading" id="wR4-Dg-tpH"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lii-eJ-678"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="2hv-oK-yl5" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="0iK-42-Io7"/>
                             <constraint firstItem="OvT-fz-MOU" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="5I1-9F-ocn"/>
                             <constraint firstItem="Slq-54-vzp" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="BIh-xH-G1C"/>
                             <constraint firstItem="Wor-ug-tjr" firstAttribute="top" secondItem="Slq-54-vzp" secondAttribute="bottom" id="GVW-V0-e8F"/>
+                            <constraint firstItem="2hv-oK-yl5" firstAttribute="top" secondItem="OvT-fz-MOU" secondAttribute="bottom" constant="40" id="IiS-Fi-aZs"/>
+                            <constraint firstItem="Lii-eJ-678" firstAttribute="bottom" secondItem="LSC-xY-VXH" secondAttribute="bottom" id="K59-Uo-1Ty"/>
                             <constraint firstItem="Hye-Rz-dZ4" firstAttribute="top" secondItem="Wor-ug-tjr" secondAttribute="bottom" constant="10" id="LTx-Fi-eiE"/>
+                            <constraint firstItem="Lii-eJ-678" firstAttribute="trailing" secondItem="LSC-xY-VXH" secondAttribute="trailing" id="M01-sc-eLm"/>
                             <constraint firstItem="eA3-3t-yGj" firstAttribute="leading" secondItem="Lii-eJ-678" secondAttribute="leading" id="NIv-hE-eLr"/>
                             <constraint firstItem="Wor-ug-tjr" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="QLQ-eR-dov"/>
                             <constraint firstItem="OvT-fz-MOU" firstAttribute="centerY" secondItem="K4s-GC-LaX" secondAttribute="centerY" id="R93-wj-g7N"/>
+                            <constraint firstItem="LSC-xY-VXH" firstAttribute="leading" secondItem="Lii-eJ-678" secondAttribute="leading" id="XRE-o1-ydC"/>
                             <constraint firstItem="Wor-ug-tjr" firstAttribute="centerY" secondItem="K4s-GC-LaX" secondAttribute="centerY" id="ded-GJ-N3r"/>
                             <constraint firstItem="Hye-Rz-dZ4" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="fQR-1V-8mm"/>
                             <constraint firstItem="eA3-3t-yGj" firstAttribute="top" secondItem="Lii-eJ-678" secondAttribute="top" id="oc5-tL-5zA"/>
@@ -400,15 +459,19 @@
                             <constraint firstItem="Slq-54-vzp" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="vqM-Re-aGQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FlT-7I-buM"/>
+                    <connections>
+                        <outlet property="timeLeftProgress" destination="LSC-xY-VXH" id="qct-2n-kKG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikw-ck-9E5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2216.8374816983892" y="1696.875"/>
         </scene>
-        <!--View Controller-->
+        <!--Chose DifficultyVC-->
         <scene sceneID="Nuc-wC-e4U">
             <objects>
-                <viewController id="33h-9U-CK7" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="difficultyVC" useStoryboardIdentifierAsRestorationIdentifier="YES" interfaceStyle="light" id="33h-9U-CK7" customClass="ChoseDifficultyVC" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dJg-H2-kUL">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -427,7 +490,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Ue6-3h-BRZ">
                                 <rect key="frame" x="564" y="342" width="238" height="340"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eo-SA-Dbq">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eo-SA-Dbq">
                                         <rect key="frame" x="0.0" y="0.0" width="238" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.47843140360000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -437,8 +500,11 @@
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="簡Easy単"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="7dn-x7-iSu"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxC-mU-Gq1">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxC-mU-Gq1">
                                         <rect key="frame" x="0.0" y="140" width="238" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -448,8 +514,11 @@
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="はModerateい"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="jXu-xx-aWO"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBj-B3-QmH">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBj-B3-QmH">
                                         <rect key="frame" x="0.0" y="280" width="238" height="60"/>
                                         <color key="backgroundColor" red="0.96078431610000004" green="0.50980395079999996" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
@@ -459,6 +528,9 @@
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="ハHardド"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="KEY-8L-irv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -472,7 +544,7 @@
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VQH-wO-dZ5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="xlS-Bv-ZSH" firstAttribute="top" secondItem="VQH-wO-dZ5" secondAttribute="top" id="YXE-pl-rrf"/>
                             <constraint firstItem="Ue6-3h-BRZ" firstAttribute="centerX" secondItem="dJg-H2-kUL" secondAttribute="centerX" id="d9b-T6-fAl"/>
@@ -481,6 +553,7 @@
                             <constraint firstItem="Ue6-3h-BRZ" firstAttribute="centerY" secondItem="dJg-H2-kUL" secondAttribute="centerY" id="uMv-R0-VAm"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2uO-bG-7ne"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="phS-ys-HtF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -587,11 +660,8 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.right.circle" catalog="system" width="128" height="121"/>
-        <image name="gameMap" width="500" height="500"/>
+        <image name="gameMap2" width="500" height="500"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="カックロ" width="500" height="500"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

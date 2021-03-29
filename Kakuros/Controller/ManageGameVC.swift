@@ -20,6 +20,18 @@ class ManageGameVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = true
     }
+    
+    
+    @IBAction func buttonClicked(_ sender: UIButton) {
+        if sender.tag == 1{
+            let destinationVC = storyboard?.instantiateViewController(identifier: "difficultyVC") as! ChoseDifficultyVC
+            destinationVC.modalPresentationStyle = .fullScreen
+            present(destinationVC, animated: true, completion: nil)
+        }
+    
+    }
+    
+    // Sign out function to manage user auth state
     @IBAction func signOut(_ sender: UIButton) {
         let firebaseAuth = Auth.auth()
         do {
