@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x6V-jp-ZhC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lxq-Ii-A3F">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -20,7 +20,7 @@
                                 <rect key="frame" x="550" y="399" width="266" height="226"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BUA-d6-ezq">
-                                        <rect key="frame" x="32" y="0.0" width="202" height="95"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="95"/>
                                         <color key="backgroundColor" red="0.0" green="0.44313728810000003" blue="0.47058826679999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="71"/>
                                         <state key="normal" title=" Login ">
@@ -43,6 +43,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="BUA-d6-ezq" secondAttribute="trailing" id="FzM-2b-F4r"/>
+                                    <constraint firstItem="BUA-d6-ezq" firstAttribute="top" secondItem="07b-cK-gmB" secondAttribute="top" id="Ppn-yu-TfT"/>
+                                    <constraint firstItem="BUA-d6-ezq" firstAttribute="leading" secondItem="07b-cK-gmB" secondAttribute="leading" id="Ud1-9d-HJ5"/>
+                                </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="カックロ" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-3c-huP">
                                 <rect key="frame" x="300" y="70" width="766" height="297"/>
@@ -436,6 +441,12 @@
                                     <constraint firstItem="Uol-eK-ER1" firstAttribute="leading" secondItem="2hv-oK-yl5" secondAttribute="leading" id="wR4-Dg-tpH"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lw6-Lb-ApR">
+                                <rect key="frame" x="675.5" y="165" width="15.5" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="1" green="0.47843140360000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lii-eJ-678"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -445,9 +456,11 @@
                             <constraint firstItem="Slq-54-vzp" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="BIh-xH-G1C"/>
                             <constraint firstItem="Wor-ug-tjr" firstAttribute="top" secondItem="Slq-54-vzp" secondAttribute="bottom" id="GVW-V0-e8F"/>
                             <constraint firstItem="2hv-oK-yl5" firstAttribute="top" secondItem="OvT-fz-MOU" secondAttribute="bottom" constant="40" id="IiS-Fi-aZs"/>
+                            <constraint firstItem="Lw6-Lb-ApR" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="JXD-nz-kh8"/>
                             <constraint firstItem="Lii-eJ-678" firstAttribute="bottom" secondItem="LSC-xY-VXH" secondAttribute="bottom" id="K59-Uo-1Ty"/>
                             <constraint firstItem="Hye-Rz-dZ4" firstAttribute="top" secondItem="Wor-ug-tjr" secondAttribute="bottom" constant="10" id="LTx-Fi-eiE"/>
                             <constraint firstItem="Lii-eJ-678" firstAttribute="trailing" secondItem="LSC-xY-VXH" secondAttribute="trailing" id="M01-sc-eLm"/>
+                            <constraint firstItem="Lw6-Lb-ApR" firstAttribute="top" secondItem="eA3-3t-yGj" secondAttribute="bottom" constant="50" id="MId-xj-lTb"/>
                             <constraint firstItem="eA3-3t-yGj" firstAttribute="leading" secondItem="Lii-eJ-678" secondAttribute="leading" id="NIv-hE-eLr"/>
                             <constraint firstItem="Wor-ug-tjr" firstAttribute="centerX" secondItem="K4s-GC-LaX" secondAttribute="centerX" id="QLQ-eR-dov"/>
                             <constraint firstItem="OvT-fz-MOU" firstAttribute="centerY" secondItem="K4s-GC-LaX" secondAttribute="centerY" id="R93-wj-g7N"/>
@@ -462,11 +475,15 @@
                     <navigationItem key="navigationItem" id="FlT-7I-buM"/>
                     <connections>
                         <outlet property="timeLeftProgress" destination="LSC-xY-VXH" id="qct-2n-kKG"/>
+                        <outletCollection property="mapPoints" destination="BBC-om-fFE" collectionClass="NSMutableArray" id="LKy-O6-Ok6"/>
+                        <outletCollection property="mapPoints" destination="che-er-rMf" collectionClass="NSMutableArray" id="Hb8-0r-TmQ"/>
+                        <outletCollection property="mapPoints" destination="n8K-np-bH4" collectionClass="NSMutableArray" id="qM5-s7-796"/>
+                        <outletCollection property="mapPoints" destination="erM-lO-gJK" collectionClass="NSMutableArray" id="nx9-Ia-DeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikw-ck-9E5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2682" y="1680"/>
+            <point key="canvasLocation" x="2176" y="1697"/>
         </scene>
         <!--Chose DifficultyVC-->
         <scene sceneID="Nuc-wC-e4U">

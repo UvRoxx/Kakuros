@@ -7,14 +7,17 @@
 
 import Foundation
 
-
+protocol LoadMapDelegate {
+    func loadMapDelegate(mapInfo:MapModel)
+}
 
 struct MapManager{
+    var delegate:LoadMapDelegate?
     
     
     func GetMap(){
         let endpoint = URL(string:"https://kakuro-gamemap-api.herokuapp.com/sendmap/cebd1c66-4013-4de4-bb60-6cb0ffc1eff2")
-
+        
         let session  = URLSession(configuration: .default)
         let task = session.dataTask(with: endpoint!) { (data, response, error) in
             if let e = error{
@@ -22,8 +25,10 @@ struct MapManager{
                 return
             }
             if let safeData = data{
-let finalMap = parseJSON(data: safeData)
-                (finalMap)
+                let finalMap = parseJSON(data: safeData)
+                if let map = finalMap{
+                    delegate?.loadMapDelegate(mapInfo: map)
+                }
             }
         }
         task.resume()
@@ -41,5 +46,5 @@ let finalMap = parseJSON(data: safeData)
         
     }
     
-   
+    
 }

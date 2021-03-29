@@ -18,7 +18,7 @@ class ChoseDifficultyVC: UIViewController {
     
 
     @IBAction func buttonClicked(_ sender: UIButton) {
-        let destinationVC = storyboard?.instantiateViewController(identifier: "MainGameVC") as! MainGameVC
+        let destinationVC = storyboard?.instantiateViewController(identifier: "LoadingVC") as! LoadingVC
         destinationVC.time = sender.tag
         destinationVC.modalPresentationStyle = .fullScreen
         present(destinationVC, animated: true, completion: nil)

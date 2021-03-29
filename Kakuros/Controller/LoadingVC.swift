@@ -7,11 +7,13 @@
 
 import UIKit
 import Lottie
-class LoadingVC: UIViewController {
+class LoadingVC: UIViewController,LoadMapDelegate {
+   
 
     @IBOutlet weak var loadingView: UIView!
     
-    let mapManager = MapManager()
+    var time = 0
+    var mapManager = MapManager()
 
     var animationView: AnimationView?
     var loading: AnimationView?
@@ -26,7 +28,25 @@ class LoadingVC: UIViewController {
         loadingView.addSubview(loading!)
         loading?.play()
         
+        mapManager.delegate = self
         mapManager.GetMap()
+    }
+    
+    
+    func loadMapDelegate(mapInfo: MapModel) {
+        //Using Grand Central Dispatch To Manage the Netoworking call Asynchronous
+        DispatchQueue.main.async {
+            let destinationVC = self.storyboard?.instantiateViewController(identifier: "MainGameVC") as! MainGameVC
+            destinationVC.time = self.time
+            destinationVC.map = mapInfo.MAP
+            destinationVC.sol = mapInfo.SOL
+            destinationVC.modalPresentationStyle = .fullScreen
+            self.present(destinationVC, animated: true, completion: nil)
+            
+            
+        }
+       
+        
     }
     
 
