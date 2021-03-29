@@ -24,6 +24,10 @@
 		105B8B7D26123B54008B8068 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8B7C26123B54008B8068 /* LoadingVC.swift */; };
 		105B8B9E26124170008B8068 /* load.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B8B9D26124170008B8068 /* load.json */; };
 		105B8BA4261247C6008B8068 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8BA3261247C6008B8068 /* MapModel.swift */; };
+		105B8BA7261253DB008B8068 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8BA6261253DB008B8068 /* GameModel.swift */; };
+		105B8BAD26125C14008B8068 /* WinnerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8BAC26125C14008B8068 /* WinnerVC.swift */; };
+		105B8BB426125FDB008B8068 /* winner.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B8BB326125FDB008B8068 /* winner.json */; };
+		105B8BB726126032008B8068 /* again.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B8BB626126032008B8068 /* again.json */; };
 		CB124EE887EAE262FABA5E2D /* Pods_Kakuros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A400450926CFC9CE988610 /* Pods_Kakuros.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +52,10 @@
 		105B8B7C26123B54008B8068 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		105B8B9D26124170008B8068 /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
 		105B8BA3261247C6008B8068 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		105B8BA6261253DB008B8068 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		105B8BAC26125C14008B8068 /* WinnerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerVC.swift; sourceTree = "<group>"; };
+		105B8BB326125FDB008B8068 /* winner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = winner.json; sourceTree = "<group>"; };
+		105B8BB626126032008B8068 /* again.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = again.json; sourceTree = "<group>"; };
 		504ECE101488AE11D34F85D0 /* Pods-Kakuros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.release.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.release.xcconfig"; sourceTree = "<group>"; };
 		95122F1FEEDD0239514C2E23 /* Pods-Kakuros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.debug.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +96,8 @@
 				100315232611A4B000816EA4 /* AppDelegate.swift */,
 				100315252611A4B000816EA4 /* SceneDelegate.swift */,
 				105B8B9D26124170008B8068 /* load.json */,
+				105B8BB626126032008B8068 /* again.json */,
+				105B8BB326125FDB008B8068 /* winner.json */,
 				1003153D2611A4DA00816EA4 /* Model */,
 				1003153C2611A4CE00816EA4 /* View */,
 				1003153B2611A4BB00816EA4 /* Controller */,
@@ -110,6 +120,7 @@
 				100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */,
 				100315732611C65200816EA4 /* MainGameVC.swift */,
 				105B8B7C26123B54008B8068 /* LoadingVC.swift */,
+				105B8BAC26125C14008B8068 /* WinnerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -127,6 +138,7 @@
 			children = (
 				105B8B7526123974008B8068 /* MapManager.swift */,
 				105B8BA3261247C6008B8068 /* MapModel.swift */,
+				105B8BA6261253DB008B8068 /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,7 +219,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105B8BB426125FDB008B8068 /* winner.json in Resources */,
 				100315332611A4B100816EA4 /* LaunchScreen.storyboard in Resources */,
+				105B8BB726126032008B8068 /* again.json in Resources */,
 				100315402611A92A00816EA4 /* GoogleService-Info.plist in Resources */,
 				105B8B9E26124170008B8068 /* load.json in Resources */,
 				100315302611A4B100816EA4 /* Assets.xcassets in Resources */,
@@ -265,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				100315712611C4EE00816EA4 /* ChoseDifficultyVC.swift in Sources */,
+				105B8BAD26125C14008B8068 /* WinnerVC.swift in Sources */,
 				1003156B2611B68000816EA4 /* SignupVC.swift in Sources */,
 				105B8B7626123974008B8068 /* MapManager.swift in Sources */,
 				1003156E2611BF7500816EA4 /* ManageGameVC.swift in Sources */,
@@ -275,6 +290,7 @@
 				100315242611A4B000816EA4 /* AppDelegate.swift in Sources */,
 				100315262611A4B000816EA4 /* SceneDelegate.swift in Sources */,
 				100315682611B66C00816EA4 /* LoginVC.swift in Sources */,
+				105B8BA7261253DB008B8068 /* GameModel.swift in Sources */,
 				105B8B7D26123B54008B8068 /* LoadingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
