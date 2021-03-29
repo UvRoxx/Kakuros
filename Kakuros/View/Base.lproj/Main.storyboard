@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lxq-Ii-A3F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x6V-jp-ZhC">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -466,7 +466,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikw-ck-9E5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2216.8374816983892" y="1696.875"/>
+            <point key="canvasLocation" x="2682" y="1680"/>
         </scene>
         <!--Chose DifficultyVC-->
         <scene sceneID="Nuc-wC-e4U">
@@ -653,6 +653,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iaT-Bk-YV4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="85.212298682284029" y="81.4453125"/>
+        </scene>
+        <!--LoadingVC-->
+        <scene sceneID="Mgo-p6-R20">
+            <objects>
+                <viewController storyboardIdentifier="LoadingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x6V-jp-ZhC" customClass="LoadingVC" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BIz-XC-btL">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ローディLoadingング中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbz-rx-FJF">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="115"/>
+                                <color key="backgroundColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="ASQ-zS-JcX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F11-a3-6cX">
+                                <rect key="frame" x="433" y="262" width="500" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="0aE-S2-op3"/>
+                                    <constraint firstAttribute="width" constant="500" id="CCB-so-BIa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait while we load the Game Map" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Or8-rt-2lh">
+                                <rect key="frame" x="512" y="772" width="342" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vNI-S2-oSu"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dbz-rx-FJF" firstAttribute="leading" secondItem="BIz-XC-btL" secondAttribute="leading" id="0Xj-Y1-Uxx"/>
+                            <constraint firstItem="F11-a3-6cX" firstAttribute="centerX" secondItem="BIz-XC-btL" secondAttribute="centerX" id="4uF-xn-SJv"/>
+                            <constraint firstItem="vNI-S2-oSu" firstAttribute="trailing" secondItem="dbz-rx-FJF" secondAttribute="trailing" id="CB9-6H-oOW"/>
+                            <constraint firstItem="F11-a3-6cX" firstAttribute="centerY" secondItem="BIz-XC-btL" secondAttribute="centerY" id="Isw-bC-77f"/>
+                            <constraint firstItem="Or8-rt-2lh" firstAttribute="top" secondItem="F11-a3-6cX" secondAttribute="bottom" constant="10" id="Kqm-Vq-GcB"/>
+                            <constraint firstItem="Or8-rt-2lh" firstAttribute="centerX" secondItem="BIz-XC-btL" secondAttribute="centerX" id="MVi-tp-bMy"/>
+                            <constraint firstItem="dbz-rx-FJF" firstAttribute="top" secondItem="vNI-S2-oSu" secondAttribute="top" id="eOU-Xb-mIH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loadingView" destination="F11-a3-6cX" id="0Bm-ls-AOd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wdt-yh-rhl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2176" y="894"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

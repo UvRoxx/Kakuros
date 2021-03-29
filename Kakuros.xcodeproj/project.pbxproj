@@ -20,6 +20,10 @@
 		1003156E2611BF7500816EA4 /* ManageGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003156D2611BF7500816EA4 /* ManageGameVC.swift */; };
 		100315712611C4EE00816EA4 /* ChoseDifficultyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */; };
 		100315742611C65300816EA4 /* MainGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100315732611C65200816EA4 /* MainGameVC.swift */; };
+		105B8B7626123974008B8068 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8B7526123974008B8068 /* MapManager.swift */; };
+		105B8B7D26123B54008B8068 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8B7C26123B54008B8068 /* LoadingVC.swift */; };
+		105B8B9E26124170008B8068 /* load.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B8B9D26124170008B8068 /* load.json */; };
+		105B8BA4261247C6008B8068 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8BA3261247C6008B8068 /* MapModel.swift */; };
 		CB124EE887EAE262FABA5E2D /* Pods_Kakuros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A400450926CFC9CE988610 /* Pods_Kakuros.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,10 @@
 		1003156D2611BF7500816EA4 /* ManageGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGameVC.swift; sourceTree = "<group>"; };
 		100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseDifficultyVC.swift; sourceTree = "<group>"; };
 		100315732611C65200816EA4 /* MainGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameVC.swift; sourceTree = "<group>"; };
+		105B8B7526123974008B8068 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		105B8B7C26123B54008B8068 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
+		105B8B9D26124170008B8068 /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
+		105B8BA3261247C6008B8068 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		504ECE101488AE11D34F85D0 /* Pods-Kakuros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.release.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.release.xcconfig"; sourceTree = "<group>"; };
 		95122F1FEEDD0239514C2E23 /* Pods-Kakuros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.debug.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +87,7 @@
 			children = (
 				100315232611A4B000816EA4 /* AppDelegate.swift */,
 				100315252611A4B000816EA4 /* SceneDelegate.swift */,
+				105B8B9D26124170008B8068 /* load.json */,
 				1003153D2611A4DA00816EA4 /* Model */,
 				1003153C2611A4CE00816EA4 /* View */,
 				1003153B2611A4BB00816EA4 /* Controller */,
@@ -100,6 +109,7 @@
 				1003156D2611BF7500816EA4 /* ManageGameVC.swift */,
 				100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */,
 				100315732611C65200816EA4 /* MainGameVC.swift */,
+				105B8B7C26123B54008B8068 /* LoadingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -115,6 +125,8 @@
 		1003153D2611A4DA00816EA4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				105B8B7526123974008B8068 /* MapManager.swift */,
+				105B8BA3261247C6008B8068 /* MapModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -197,6 +209,7 @@
 			files = (
 				100315332611A4B100816EA4 /* LaunchScreen.storyboard in Resources */,
 				100315402611A92A00816EA4 /* GoogleService-Info.plist in Resources */,
+				105B8B9E26124170008B8068 /* load.json in Resources */,
 				100315302611A4B100816EA4 /* Assets.xcassets in Resources */,
 				1003152B2611A4B000816EA4 /* Main.storyboard in Resources */,
 			);
@@ -253,13 +266,16 @@
 			files = (
 				100315712611C4EE00816EA4 /* ChoseDifficultyVC.swift in Sources */,
 				1003156B2611B68000816EA4 /* SignupVC.swift in Sources */,
+				105B8B7626123974008B8068 /* MapManager.swift in Sources */,
 				1003156E2611BF7500816EA4 /* ManageGameVC.swift in Sources */,
+				105B8BA4261247C6008B8068 /* MapModel.swift in Sources */,
 				1003152E2611A4B000816EA4 /* Kakuros.xcdatamodeld in Sources */,
 				100315742611C65300816EA4 /* MainGameVC.swift in Sources */,
 				100315282611A4B000816EA4 /* ViewController.swift in Sources */,
 				100315242611A4B000816EA4 /* AppDelegate.swift in Sources */,
 				100315262611A4B000816EA4 /* SceneDelegate.swift in Sources */,
 				100315682611B66C00816EA4 /* LoginVC.swift in Sources */,
+				105B8B7D26123B54008B8068 /* LoadingVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

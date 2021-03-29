@@ -7,4 +7,6 @@ target 'Kakuros' do
   # Pods for Kakuros
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod'lottie-ios'
+
 end
