@@ -971,11 +971,81 @@
             </objects>
             <point key="canvasLocation" x="2791.800878477306" y="1664.6484375"/>
         </scene>
+        <!--High ScoreVC-->
+        <scene sceneID="rBI-gV-CuC">
+            <objects>
+                <viewController storyboardIdentifier="HighScoreVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pPu-Uw-NZG" customClass="HighScoreVC" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pj4-gu-cyt">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ィグ中 High Score ンローデ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TO1-Up-N0E">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="116.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ya4-JF-zzX">
+                                <rect key="frame" x="659" y="453.5" width="48" height="117"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="100"/>
+                                <color key="textColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWK-yV-Dac">
+                                <rect key="frame" x="20" y="936" width="270.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="tintColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Return Home" image="house.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeClicked:" destination="pPu-Uw-NZG" eventType="touchUpInside" id="bRx-OD-kO9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwr-Rd-KFr">
+                                <rect key="frame" x="1104" y="937" width="242" height="47"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="tintColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Reset Score" image="arrow.counterclockwise.circle" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeClicked:" destination="pPu-Uw-NZG" eventType="touchUpInside" id="OtI-sh-3Oy"/>
+                                    <action selector="resetScore:" destination="pPu-Uw-NZG" eventType="touchUpInside" id="dqT-mD-kMa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S3S-Mz-XOb"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TO1-Up-N0E" firstAttribute="top" secondItem="S3S-Mz-XOb" secondAttribute="top" id="EuF-YF-IeS"/>
+                            <constraint firstItem="TO1-Up-N0E" firstAttribute="leading" secondItem="Pj4-gu-cyt" secondAttribute="leading" id="ID0-LN-xVD"/>
+                            <constraint firstItem="zWK-yV-Dac" firstAttribute="leading" secondItem="S3S-Mz-XOb" secondAttribute="leading" constant="20" id="LTH-mG-Nar"/>
+                            <constraint firstItem="Ya4-JF-zzX" firstAttribute="centerY" secondItem="Pj4-gu-cyt" secondAttribute="centerY" id="NLo-Ov-xEs"/>
+                            <constraint firstItem="S3S-Mz-XOb" firstAttribute="bottom" secondItem="Dwr-Rd-KFr" secondAttribute="bottom" constant="20" id="Sko-pa-yEm"/>
+                            <constraint firstItem="S3S-Mz-XOb" firstAttribute="trailing" secondItem="Dwr-Rd-KFr" secondAttribute="trailing" constant="20" id="YSf-vA-S1R"/>
+                            <constraint firstItem="S3S-Mz-XOb" firstAttribute="bottom" secondItem="zWK-yV-Dac" secondAttribute="bottom" constant="20" id="k9r-LG-qZT"/>
+                            <constraint firstItem="Ya4-JF-zzX" firstAttribute="centerX" secondItem="Pj4-gu-cyt" secondAttribute="centerX" id="kw5-a4-amw"/>
+                            <constraint firstItem="S3S-Mz-XOb" firstAttribute="trailing" secondItem="TO1-Up-N0E" secondAttribute="trailing" id="oOP-Mh-Ih2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Ya4-JF-zzX" id="ifV-gi-LBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l0j-mA-9d3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2792" y="894"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="bQT-pm-TpG"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="arrow.counterclockwise.circle" catalog="system" width="128" height="121"/>
         <image name="arrow.right.circle" catalog="system" width="128" height="121"/>
         <image name="gameMap2" width="500" height="500"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>

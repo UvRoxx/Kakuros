@@ -29,6 +29,9 @@ class ManageGameVC: UIViewController {
             present(destinationVC, animated: true, completion: nil)
         }
         else if sender.tag == 2{
+            let destinationVC = storyboard?.instantiateViewController(identifier: "HighScoreVC") as! HighScoreVC
+            destinationVC.modalPresentationStyle = .fullScreen
+            present(destinationVC, animated: true, completion: nil)
             
         }else{
             let destinationVC = storyboard?.instantiateViewController(identifier: "HowToPlayVC") as! HowToPlayVC

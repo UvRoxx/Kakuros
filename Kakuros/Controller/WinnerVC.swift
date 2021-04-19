@@ -15,6 +15,7 @@ class WinnerVC: UIViewController {
     var animationName = ""
     var pageTitle = ""
     var score = 0
+    let defaults = UserDefaults.standard
     @IBOutlet weak var userScore: UILabel!
     var animationView: AnimationView?
     var loading: AnimationView?
@@ -22,6 +23,7 @@ class WinnerVC: UIViewController {
         super.viewDidLoad()
         pageHeadline.text = pageTitle
         userScore.text = "Score:\(score)"
+        
         loading = .init(name:animationName)
         loading?.loopMode = .loop
         loading?.animationSpeed = 1
@@ -29,6 +31,8 @@ class WinnerVC: UIViewController {
         loading?.sizeToFit()
         winnerAnimation.addSubview(loading!)
         loading?.play()
+        setScore()
+        
     }
     
     @IBAction func buttonClicked(_ sender: UIButton) {
@@ -37,6 +41,18 @@ class WinnerVC: UIViewController {
         present(destinationVC, animated: true, completion: nil)
     }
     
-    
+    func setScore(){
+        if let savedScore = defaults.value(forKeyPath: "score")as?Int{
+            
+            if savedScore<score{
+                defaults.setValue(score, forKey: "score")
+            }
+
+        }else{
+            defaults.setValue(score, forKey: "score")
+
+        }
+        
+    }
     
 }

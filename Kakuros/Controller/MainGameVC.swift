@@ -86,14 +86,14 @@ class MainGameVC: UIViewController {
                             i+=1;
                             print(flag)
                             if flag==4{
-                              
+                                
                                 endGame(1)
                             }else if flag==4 && i>3{
                                 let errorAlert = gameModel.gameAlert("Almost There", "You Still Have Time Try Again...")
                                 present(errorAlert, animated: true, completion: nil)
                             }
                         }
-                    
+                        
                     }
                     
                 } else {
@@ -110,11 +110,13 @@ class MainGameVC: UIViewController {
     func endGame(_ status:Int){
         var animationName = ""
         var displayText = ""
+        var myScore = 0
         if status==1{
             animationName = "winner"
             displayText = "勝 Winner 者"
-        
-
+            myScore = 100-((secondPassed*100)/time)
+            
+            
         }
         else
         {
@@ -126,7 +128,7 @@ class MainGameVC: UIViewController {
         let destinationVC = storyboard?.instantiateViewController(identifier: "WinnerVC") as! WinnerVC
         destinationVC.animationName = animationName
         destinationVC.pageTitle = displayText
-        destinationVC.score = 100-((secondPassed*100)/time)
+        destinationVC.score = myScore
         destinationVC.modalPresentationStyle = .fullScreen
         present(destinationVC, animated: true, completion: nil)    }
     

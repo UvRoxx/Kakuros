@@ -31,6 +31,7 @@
 		105B8BAD26125C14008B8068 /* WinnerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8BAC26125C14008B8068 /* WinnerVC.swift */; };
 		105B8BB426125FDB008B8068 /* winner.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B8BB326125FDB008B8068 /* winner.json */; };
 		105B8BB726126032008B8068 /* again.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B8BB626126032008B8068 /* again.json */; };
+		10964D97262DE50E00879F8B /* HighScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10964D96262DE50E00879F8B /* HighScoreVC.swift */; };
 		CB124EE887EAE262FABA5E2D /* Pods_Kakuros.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01A400450926CFC9CE988610 /* Pods_Kakuros.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		105B8BAC26125C14008B8068 /* WinnerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerVC.swift; sourceTree = "<group>"; };
 		105B8BB326125FDB008B8068 /* winner.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = winner.json; sourceTree = "<group>"; };
 		105B8BB626126032008B8068 /* again.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = again.json; sourceTree = "<group>"; };
+		10964D96262DE50E00879F8B /* HighScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreVC.swift; sourceTree = "<group>"; };
 		504ECE101488AE11D34F85D0 /* Pods-Kakuros.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.release.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.release.xcconfig"; sourceTree = "<group>"; };
 		95122F1FEEDD0239514C2E23 /* Pods-Kakuros.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kakuros.debug.xcconfig"; path = "Target Support Files/Pods-Kakuros/Pods-Kakuros.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,6 +142,7 @@
 				105B8BAC26125C14008B8068 /* WinnerVC.swift */,
 				103A22F5262DC92E00877962 /* HowToPlayVC.swift */,
 				103A22F8262DCA7D00877962 /* WatchTutorialVC.swift */,
+				10964D96262DE50E00879F8B /* HighScoreVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10964D97262DE50E00879F8B /* HighScoreVC.swift in Sources */,
 				100315712611C4EE00816EA4 /* ChoseDifficultyVC.swift in Sources */,
 				105B8BAD26125C14008B8068 /* WinnerVC.swift in Sources */,
 				1003156B2611B68000816EA4 /* SignupVC.swift in Sources */,
