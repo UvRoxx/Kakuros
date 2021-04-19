@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Lxq-Ii-A3F">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YCF-YX-Kwm">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -403,31 +404,31 @@
                                 <color key="progressTintColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="2hv-oK-yl5">
-                                <rect key="frame" x="538" y="802" width="290" height="144"/>
+                                <rect key="frame" x="623" y="802" width="120" height="144"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uol-eK-ER1">
-                                        <rect key="frame" x="0.0" y="0.0" width="290" height="60"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="4Bl-31-pnM"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="参加 Submitする"/>
+                                        <state key="normal" title="Submit"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="uYe-6Q-J6t" eventType="touchUpInside" id="SDI-bt-Ncx"/>
                                             <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="t2D-vI-9D6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22W-5q-IQQ">
-                                        <rect key="frame" x="0.0" y="84" width="290" height="60"/>
+                                        <rect key="frame" x="0.0" y="84" width="120" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.47843140360000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="acq-7G-jwf"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="終わ Endりす"/>
+                                        <state key="normal" title=" End"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="uYe-6Q-J6t" eventType="touchUpInside" id="3Pb-E4-bwu"/>
                                             <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="GfU-bo-75V"/>
@@ -502,11 +503,11 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Ue6-3h-BRZ">
-                                <rect key="frame" x="564" y="342" width="238" height="340"/>
+                            <stackView opaque="NO" tag="2" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Ue6-3h-BRZ">
+                                <rect key="frame" x="604" y="342" width="158" height="340"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eo-SA-Dbq">
-                                        <rect key="frame" x="0.0" y="0.0" width="238" height="60"/>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eo-SA-Dbq">
+                                        <rect key="frame" x="0.0" y="0.0" width="158" height="60"/>
                                         <color key="backgroundColor" red="1" green="0.47843140360000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="UM7-Cl-l7C"/>
@@ -514,13 +515,13 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="簡Easy単"/>
+                                        <state key="normal" title="Easy"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="7dn-x7-iSu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxC-mU-Gq1">
-                                        <rect key="frame" x="0.0" y="140" width="238" height="60"/>
+                                        <rect key="frame" x="0.0" y="140" width="158" height="60"/>
                                         <color key="backgroundColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="keE-br-YsU"/>
@@ -528,13 +529,13 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="はModerateい"/>
+                                        <state key="normal" title="Moderate"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="jXu-xx-aWO"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBj-B3-QmH">
-                                        <rect key="frame" x="0.0" y="280" width="238" height="60"/>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IBj-B3-QmH">
+                                        <rect key="frame" x="0.0" y="280" width="158" height="60"/>
                                         <color key="backgroundColor" red="0.96078431610000004" green="0.50980395079999996" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="OUf-Te-7m2"/>
@@ -542,7 +543,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="ハHardド"/>
+                                        <state key="normal" title="Hard"/>
                                         <connections>
                                             <action selector="buttonClicked:" destination="33h-9U-CK7" eventType="touchUpInside" id="KEY-8L-irv"/>
                                         </connections>
@@ -708,21 +709,30 @@
                                     <action selector="buttonClicked:" destination="na8-2k-4pm" eventType="touchUpInside" id="Nrf-XW-goX"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6lC-2L-WXD">
+                                <rect key="frame" x="639.5" y="892" width="87" height="39"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="33"/>
+                                <color key="textColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TCZ-Ar-GZc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Kkj-sk-fbO" firstAttribute="leading" secondItem="Hdz-Xg-cnf" secondAttribute="leading" id="7vS-M2-oNH"/>
                             <constraint firstItem="EvP-2F-Fc2" firstAttribute="top" secondItem="jNR-qm-ytV" secondAttribute="bottom" constant="20" id="8Zf-xt-ehQ"/>
+                            <constraint firstItem="6lC-2L-WXD" firstAttribute="top" secondItem="EvP-2F-Fc2" secondAttribute="bottom" constant="50" id="KIT-Us-KhL"/>
                             <constraint firstItem="EvP-2F-Fc2" firstAttribute="centerX" secondItem="Hdz-Xg-cnf" secondAttribute="centerX" id="PqK-Wq-sfO"/>
                             <constraint firstItem="jNR-qm-ytV" firstAttribute="centerY" secondItem="Hdz-Xg-cnf" secondAttribute="centerY" id="bTy-Hc-msH"/>
                             <constraint firstItem="Kkj-sk-fbO" firstAttribute="top" secondItem="TCZ-Ar-GZc" secondAttribute="top" id="hpi-E4-bCA"/>
                             <constraint firstItem="TCZ-Ar-GZc" firstAttribute="trailing" secondItem="Kkj-sk-fbO" secondAttribute="trailing" id="poQ-1W-N2L"/>
+                            <constraint firstItem="6lC-2L-WXD" firstAttribute="centerX" secondItem="Hdz-Xg-cnf" secondAttribute="centerX" id="pxy-Jm-5bb"/>
                             <constraint firstItem="jNR-qm-ytV" firstAttribute="centerX" secondItem="Hdz-Xg-cnf" secondAttribute="centerX" id="uIM-Z8-ydu"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="pageHeadline" destination="Kkj-sk-fbO" id="ZYw-6C-EGz"/>
+                        <outlet property="userScore" destination="6lC-2L-WXD" id="Adi-Gy-MYo"/>
                         <outlet property="winnerAnimation" destination="jNR-qm-ytV" id="Doq-fx-aJs"/>
                     </connections>
                 </viewController>
@@ -783,14 +793,196 @@
             </objects>
             <point key="canvasLocation" x="2146" y="894"/>
         </scene>
+        <!--How To PlayVC-->
+        <scene sceneID="BQf-xT-CLj">
+            <objects>
+                <viewController storyboardIdentifier="HowToPlayVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="i9w-mZ-aqs" customClass="HowToPlayVC" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nVu-Mz-RTZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ローディHow to Play ング中" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j5l-kf-Ah9">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="116.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Rq9-eH-hC9">
+                                <rect key="frame" x="564.5" y="427" width="237" height="170"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TGq-XN-ITI">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="60"/>
+                                        <color key="backgroundColor" red="0.96078431610000004" green="0.50980395079999996" blue="0.12549020350000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="oml-dH-z2q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="  Read Info  "/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="i9w-mZ-aqs" eventType="touchUpInside" id="d1P-Ku-C0U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTZ-vr-RUI">
+                                        <rect key="frame" x="0.0" y="110" width="237" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.45490196350000001" blue="0.48235297199999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="q3H-fn-e4i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="40"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Watch Tutorial"/>
+                                        <connections>
+                                            <action selector="buttonClicked:" destination="Lxq-Ii-A3F" eventType="touchUpInside" id="NF6-iT-vRW"/>
+                                            <action selector="buttonClicked:" destination="i9w-mZ-aqs" eventType="touchUpInside" id="nQF-Sl-LfQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="TGq-XN-ITI" firstAttribute="top" secondItem="Rq9-eH-hC9" secondAttribute="top" id="IIq-li-KYX"/>
+                                    <constraint firstItem="TGq-XN-ITI" firstAttribute="leading" secondItem="Rq9-eH-hC9" secondAttribute="leading" id="M89-Jt-qTv"/>
+                                    <constraint firstAttribute="trailing" secondItem="TGq-XN-ITI" secondAttribute="trailing" id="Td2-y6-bTw"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JS-TT-puh">
+                                <rect key="frame" x="10" y="946" width="270.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="tintColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Return Home" image="house.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="i9w-mZ-aqs" eventType="touchUpInside" id="RBu-lV-ZPc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9dd-4T-LgM"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="j5l-kf-Ah9" firstAttribute="leading" secondItem="nVu-Mz-RTZ" secondAttribute="leading" id="0uG-7A-HMy"/>
+                            <constraint firstItem="3JS-TT-puh" firstAttribute="leading" secondItem="9dd-4T-LgM" secondAttribute="leading" constant="10" id="1WN-cd-U7R"/>
+                            <constraint firstItem="9dd-4T-LgM" firstAttribute="bottom" secondItem="3JS-TT-puh" secondAttribute="bottom" constant="10" id="9vO-HZ-OY5"/>
+                            <constraint firstItem="Rq9-eH-hC9" firstAttribute="centerY" secondItem="nVu-Mz-RTZ" secondAttribute="centerY" id="Slr-gC-Jnf"/>
+                            <constraint firstItem="9dd-4T-LgM" firstAttribute="trailing" secondItem="j5l-kf-Ah9" secondAttribute="trailing" id="cJu-1Z-Izh"/>
+                            <constraint firstItem="Rq9-eH-hC9" firstAttribute="centerX" secondItem="nVu-Mz-RTZ" secondAttribute="centerX" id="e51-wo-Xdv"/>
+                            <constraint firstItem="j5l-kf-Ah9" firstAttribute="top" secondItem="9dd-4T-LgM" secondAttribute="top" id="gcz-Qe-rjL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FYC-z2-bNP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2148" y="1666"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CiV-kd-zec">
+            <objects>
+                <viewController id="SKh-yv-Z1L" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jx4-NE-Xd5">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eSt-fU-b27">
+                                <rect key="frame" x="20" y="936" width="270.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="tintColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Return Home" image="house.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButtonClicked:" destination="mJ0-oG-rgp" eventType="touchUpInside" id="zRR-7u-omH"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ィグ中  Info  ンローデ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVI-DL-sAg">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="116.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ju8-T3-urE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gVI-DL-sAg" firstAttribute="top" secondItem="Ju8-T3-urE" secondAttribute="top" id="2Rd-ct-seu"/>
+                            <constraint firstItem="eSt-fU-b27" firstAttribute="leading" secondItem="Ju8-T3-urE" secondAttribute="leading" constant="20" id="IHq-b1-phP"/>
+                            <constraint firstItem="Ju8-T3-urE" firstAttribute="bottom" secondItem="eSt-fU-b27" secondAttribute="bottom" constant="20" id="YAG-vH-apY"/>
+                            <constraint firstItem="gVI-DL-sAg" firstAttribute="leading" secondItem="Ju8-T3-urE" secondAttribute="leading" id="aAA-Mk-Sce"/>
+                            <constraint firstAttribute="trailing" secondItem="gVI-DL-sAg" secondAttribute="trailing" id="rcT-jj-8co"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDC-Yi-SWk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2147" y="2354"/>
+        </scene>
+        <!--Watch TutorialVC-->
+        <scene sceneID="480-Fd-vi2">
+            <objects>
+                <viewController storyboardIdentifier="WatchTutorialVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mJ0-oG-rgp" customClass="WatchTutorialVC" customModule="Kakuros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BMw-h6-zWq">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ィグ中 Tutorial ンローデ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQP-sD-gus">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="116.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="100"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUK-Ib-FXf" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="116.5" width="1366" height="762.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ng-JA-Do3">
+                                <rect key="frame" x="20" y="899" width="270.5" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                <color key="tintColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Return Home" image="house.fill" catalog="system">
+                                    <color key="titleColor" red="0.0" green="0.55686277149999996" blue="0.59215688710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="32" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="homeButtonClicked:" destination="mJ0-oG-rgp" eventType="touchUpInside" id="QBc-r0-JRd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ahQ-WQ-4wP"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="9ng-JA-Do3" firstAttribute="top" secondItem="sUK-Ib-FXf" secondAttribute="bottom" constant="20" id="9dI-91-J2S"/>
+                            <constraint firstItem="sUK-Ib-FXf" firstAttribute="top" secondItem="qQP-sD-gus" secondAttribute="bottom" id="9kQ-FO-6jr"/>
+                            <constraint firstItem="sUK-Ib-FXf" firstAttribute="leading" secondItem="ahQ-WQ-4wP" secondAttribute="leading" id="RpP-iZ-ddu"/>
+                            <constraint firstItem="ahQ-WQ-4wP" firstAttribute="trailing" secondItem="sUK-Ib-FXf" secondAttribute="trailing" id="SwK-HZ-BBM"/>
+                            <constraint firstItem="qQP-sD-gus" firstAttribute="centerX" secondItem="BMw-h6-zWq" secondAttribute="centerX" id="cwO-Ll-x5I"/>
+                            <constraint firstItem="qQP-sD-gus" firstAttribute="leading" secondItem="ahQ-WQ-4wP" secondAttribute="leading" id="qQM-Or-eVG"/>
+                            <constraint firstAttribute="bottom" secondItem="sUK-Ib-FXf" secondAttribute="bottom" constant="145" id="r3W-ly-Fb3"/>
+                            <constraint firstItem="qQP-sD-gus" firstAttribute="top" secondItem="ahQ-WQ-4wP" secondAttribute="top" id="urN-Wh-RnW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerView" destination="sUK-Ib-FXf" id="NRW-jh-yY5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxY-fa-BRh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791.800878477306" y="1664.6484375"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="nQe-cP-BnQ"/>
+        <segue reference="bQT-pm-TpG"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.right.circle" catalog="system" width="128" height="121"/>
         <image name="gameMap2" width="500" height="500"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="カックロ" width="500" height="500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

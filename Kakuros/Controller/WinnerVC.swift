@@ -14,13 +14,14 @@ class WinnerVC: UIViewController {
     @IBOutlet weak var pageHeadline: UILabel!
     var animationName = ""
     var pageTitle = ""
-    
+    var score = 0
+    @IBOutlet weak var userScore: UILabel!
     var animationView: AnimationView?
     var loading: AnimationView?
     override func viewDidLoad() {
         super.viewDidLoad()
         pageHeadline.text = pageTitle
-        
+        userScore.text = "Score:\(score)"
         loading = .init(name:animationName)
         loading?.loopMode = .loop
         loading?.animationSpeed = 1

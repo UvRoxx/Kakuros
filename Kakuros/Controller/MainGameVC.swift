@@ -39,6 +39,7 @@ class MainGameVC: UIViewController {
         
     }
     override func viewWillAppear(_ animated: Bool) {
+        secondPassed=0
         var i = 0
         for point in mapPoints{
             point.text = String(map[i])
@@ -62,6 +63,7 @@ class MainGameVC: UIViewController {
             let percentageProgress = Float(secondPassed)/Float(time)
             timeLeftProgress.progress =  Float(percentageProgress)
             secondPassed += 1
+            
         }
         else
         {
@@ -111,16 +113,20 @@ class MainGameVC: UIViewController {
         if status==1{
             animationName = "winner"
             displayText = "勝 Winner 者"
+        
+
         }
         else
         {
             animationName = "again"
             displayText = "再試 Try Again 行す"
             
+            
         }
         let destinationVC = storyboard?.instantiateViewController(identifier: "WinnerVC") as! WinnerVC
         destinationVC.animationName = animationName
         destinationVC.pageTitle = displayText
+        destinationVC.score = 100-((secondPassed*100)/time)
         destinationVC.modalPresentationStyle = .fullScreen
         present(destinationVC, animated: true, completion: nil)    }
     

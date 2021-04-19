@@ -8,5 +8,6 @@ target 'Kakuros' do
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod'lottie-ios'
+pod "youtube-ios-player-helper"
 
 end

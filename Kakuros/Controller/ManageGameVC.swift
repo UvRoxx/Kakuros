@@ -28,6 +28,13 @@ class ManageGameVC: UIViewController {
             destinationVC.modalPresentationStyle = .fullScreen
             present(destinationVC, animated: true, completion: nil)
         }
+        else if sender.tag == 2{
+            
+        }else{
+            let destinationVC = storyboard?.instantiateViewController(identifier: "HowToPlayVC") as! HowToPlayVC
+            destinationVC.modalPresentationStyle = .fullScreen
+            present(destinationVC, animated: true, completion: nil)
+        }
     
     }
     
@@ -36,11 +43,14 @@ class ManageGameVC: UIViewController {
         let firebaseAuth = Auth.auth()
         do {
             try firebaseAuth.signOut()
-            
-            navigationController?.popToRootViewController(animated: true)
-            
+            let destinationVC = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+            destinationVC.modalPresentationStyle = .fullScreen
+            present(destinationVC, animated: true, completion: nil)
         } catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)
+            let destinationVC = storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+            destinationVC.modalPresentationStyle = .fullScreen
+            present(destinationVC, animated: true, completion: nil)
         }
     }
     

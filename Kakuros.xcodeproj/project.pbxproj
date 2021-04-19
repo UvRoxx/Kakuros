@@ -20,6 +20,9 @@
 		1003156E2611BF7500816EA4 /* ManageGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1003156D2611BF7500816EA4 /* ManageGameVC.swift */; };
 		100315712611C4EE00816EA4 /* ChoseDifficultyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */; };
 		100315742611C65300816EA4 /* MainGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100315732611C65200816EA4 /* MainGameVC.swift */; };
+		103A22F6262DC92E00877962 /* HowToPlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A22F5262DC92E00877962 /* HowToPlayVC.swift */; };
+		103A22F9262DCA7D00877962 /* WatchTutorialVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A22F8262DCA7D00877962 /* WatchTutorialVC.swift */; };
+		103A2302262DCA9C00877962 /* Test1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A2301262DCA9C00877962 /* Test1.swift */; };
 		105B8B7626123974008B8068 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8B7526123974008B8068 /* MapManager.swift */; };
 		105B8B7D26123B54008B8068 /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B8B7C26123B54008B8068 /* LoadingVC.swift */; };
 		105B8B9E26124170008B8068 /* load.json in Resources */ = {isa = PBXBuildFile; fileRef = 105B8B9D26124170008B8068 /* load.json */; };
@@ -48,6 +51,11 @@
 		1003156D2611BF7500816EA4 /* ManageGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageGameVC.swift; sourceTree = "<group>"; };
 		100315702611C4EE00816EA4 /* ChoseDifficultyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoseDifficultyVC.swift; sourceTree = "<group>"; };
 		100315732611C65200816EA4 /* MainGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameVC.swift; sourceTree = "<group>"; };
+		103A22F5262DC92E00877962 /* HowToPlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayVC.swift; sourceTree = "<group>"; };
+		103A22F8262DCA7D00877962 /* WatchTutorialVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchTutorialVC.swift; sourceTree = "<group>"; };
+		103A22FF262DCA9C00877962 /* Test1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		103A2301262DCA9C00877962 /* Test1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test1.swift; sourceTree = "<group>"; };
+		103A2303262DCA9C00877962 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		105B8B7526123974008B8068 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		105B8B7C26123B54008B8068 /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		105B8B9D26124170008B8068 /* load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = load.json; sourceTree = "<group>"; };
@@ -69,6 +77,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		103A22FC262DCA9C00877962 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -76,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				100315222611A4B000816EA4 /* Kakuros */,
+				103A2300262DCA9C00877962 /* Test1 */,
 				100315212611A4B000816EA4 /* Products */,
 				1E5123F21A231E068CA732E9 /* Pods */,
 				73DA1C4D881F0C219AA6D776 /* Frameworks */,
@@ -86,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				100315202611A4B000816EA4 /* Kakuros.app */,
+				103A22FF262DCA9C00877962 /* Test1.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,6 +138,8 @@
 				100315732611C65200816EA4 /* MainGameVC.swift */,
 				105B8B7C26123B54008B8068 /* LoadingVC.swift */,
 				105B8BAC26125C14008B8068 /* WinnerVC.swift */,
+				103A22F5262DC92E00877962 /* HowToPlayVC.swift */,
+				103A22F8262DCA7D00877962 /* WatchTutorialVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -141,6 +160,15 @@
 				105B8BA6261253DB008B8068 /* GameModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		103A2300262DCA9C00877962 /* Test1 */ = {
+			isa = PBXGroup;
+			children = (
+				103A2301262DCA9C00877962 /* Test1.swift */,
+				103A2303262DCA9C00877962 /* Info.plist */,
+			);
+			path = Test1;
 			sourceTree = "<group>";
 		};
 		1E5123F21A231E068CA732E9 /* Pods */ = {
@@ -182,6 +210,23 @@
 			productReference = 100315202611A4B000816EA4 /* Kakuros.app */;
 			productType = "com.apple.product-type.application";
 		};
+		103A22FE262DCA9C00877962 /* Test1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 103A2304262DCA9C00877962 /* Build configuration list for PBXNativeTarget "Test1" */;
+			buildPhases = (
+				103A22FB262DCA9C00877962 /* Sources */,
+				103A22FC262DCA9C00877962 /* Frameworks */,
+				103A22FD262DCA9C00877962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Test1;
+			productName = Test1;
+			productReference = 103A22FF262DCA9C00877962 /* Test1.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -192,6 +237,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					1003151F2611A4B000816EA4 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					103A22FE262DCA9C00877962 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -210,6 +258,7 @@
 			projectRoot = "";
 			targets = (
 				1003151F2611A4B000816EA4 /* Kakuros */,
+				103A22FE262DCA9C00877962 /* Test1 */,
 			);
 		};
 /* End PBXProject section */
@@ -226,6 +275,13 @@
 				105B8B9E26124170008B8068 /* load.json in Resources */,
 				100315302611A4B100816EA4 /* Assets.xcassets in Resources */,
 				1003152B2611A4B000816EA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		103A22FD262DCA9C00877962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +338,7 @@
 				105B8BAD26125C14008B8068 /* WinnerVC.swift in Sources */,
 				1003156B2611B68000816EA4 /* SignupVC.swift in Sources */,
 				105B8B7626123974008B8068 /* MapManager.swift in Sources */,
+				103A22F9262DCA7D00877962 /* WatchTutorialVC.swift in Sources */,
 				1003156E2611BF7500816EA4 /* ManageGameVC.swift in Sources */,
 				105B8BA4261247C6008B8068 /* MapModel.swift in Sources */,
 				1003152E2611A4B000816EA4 /* Kakuros.xcdatamodeld in Sources */,
@@ -290,8 +347,17 @@
 				100315242611A4B000816EA4 /* AppDelegate.swift in Sources */,
 				100315262611A4B000816EA4 /* SceneDelegate.swift in Sources */,
 				100315682611B66C00816EA4 /* LoginVC.swift in Sources */,
+				103A22F6262DC92E00877962 /* HowToPlayVC.swift in Sources */,
 				105B8BA7261253DB008B8068 /* GameModel.swift in Sources */,
 				105B8B7D26123B54008B8068 /* LoadingVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		103A22FB262DCA9C00877962 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				103A2302262DCA9C00877962 /* Test1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +539,46 @@
 			};
 			name = Release;
 		};
+		103A2305262DCA9C00877962 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4GLADUN7NL;
+				INFOPLIST_FILE = Test1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uvarma.Test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		103A2306262DCA9C00877962 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4GLADUN7NL;
+				INFOPLIST_FILE = Test1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.uvarma.Test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -490,6 +596,15 @@
 			buildConfigurations = (
 				100315382611A4B100816EA4 /* Debug */,
 				100315392611A4B100816EA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		103A2304262DCA9C00877962 /* Build configuration list for PBXNativeTarget "Test1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				103A2305262DCA9C00877962 /* Debug */,
+				103A2306262DCA9C00877962 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

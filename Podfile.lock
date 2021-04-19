@@ -302,11 +302,13 @@ PODS:
   - nanopb/decode (2.30906.0)
   - nanopb/encode (2.30906.0)
   - PromisesObjC (1.2.11)
+  - youtube-ios-player-helper (1.0.3)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Firestore
   - lottie-ios
+  - youtube-ios-player-helper
 
 SPEC REPOS:
   trunk:
@@ -326,6 +328,7 @@ SPEC REPOS:
     - lottie-ios
     - nanopb
     - PromisesObjC
+    - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -344,7 +347,8 @@ SPEC CHECKSUMS:
   lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
   nanopb: 1bf24dd71191072e120b83dd02d08f3da0d65e53
   PromisesObjC: 8c196f5a328c2cba3e74624585467a557dcb482f
+  youtube-ios-player-helper: 0185c57db23c80d63d6ca11251d110abb8a4ca61
 
-PODFILE CHECKSUM: 069c71f4f773290ce6d2f9022f26a8cd84f41bde
+PODFILE CHECKSUM: fbb0064a11447283782d9ea2d8ba1ab837430e08
 
 COCOAPODS: 1.10.0
